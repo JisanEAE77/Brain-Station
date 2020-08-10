@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/*Master CSS*/
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none;}
+ul {list-style: none;}
+li {display: inline-block; padding: 0px 20px}
+li, a, button {color: #edf0f1;}
+.inline {display: inline;}
+.invisible {display: none;}
+.visible {visibility: visible;}
+.float-left {float: left;}
+.float-right {float: right;}
+.right {text-align: right;}
+.center {text-align: center;}
+button:focus{outline: none;}
+
+/*Master CSS*/
+
+header {background-color: rgb(35, 35, 35); height: 10vh; padding: 25px 0px;}
+.navbar {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+li, a, button {font-family: 'Roboto Condensed', sans-serif; font-weight: 400; font-size: 20px; text-decoration: none; color: #edf0f1;}
+.logo {cursor: pointer; margin-right: auto;}
+.nav a, button {transition: all 0.3s ease 0s;}
+.nav a:hover {color: hsl(39, 100%, 59%);}
+.navbar button {background-color: orange; padding: 10px 20px; margin-left: 40px; color: black; font-size: 15px; border: none; border-radius: 10px; opacity: 1; cursor: pointer;}
+.navbar button:hover {background-color: hsl(39, 100%, 59%);}
+.home-slider {height: 90vh; background-color: orange; display: flex; align-items: center; justify-content: center; color: black; font-size: 36px;}
+
+
+/* Popular Course Card Design */
+
+.flex{display: flex; flex-wrap: wrap; justify-content: center;}
+.popular-courses{background-color: #ededed; padding: 50px 0px;}
+.popular-courses h1{font-size: 3.5rem; text-align: center; position: relative; margin: 0px auto;}
+.popular-courses h1:after{position: absolute; content: " "; width: 200px; height: 3px; background-color: black; bottom: -10px; left: 50%; transform: translate(-50%);}
+.single-popular-course-card{width: 350px; height: 610px; margin: 70px auto; text-align: center; transition: all 2s ease 0s; display: flex; flex-direction: column; justify-content: center; align-items: center;background-color: #1e1e26; border-radius: 10px; box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);}
+.single-popular-course-card:hover{transform: scale(1.1);}
+.single-popular-course-card h2{color: orange; margin-bottom: 5px;}
+.single-popular-course-card h3{color: hsl(39, 100%, 59%); margin: 5px auto;}
+.single-popular-course-card p{color: #ededed; margin: 10px auto; width: 80%; text-align: justify;}
+.single-popular-course-card img{height: 200px; max-width: 100%; max-height: 100%; margin: 25px auto}
+.single-popular-course-card span{color: lightgreen; margin: 10px auto;}
+.single-popular-course-card button{background-color: orange; padding: 10px 20px; margin-top: 15px; color: black; font-size: 15px; border: none; border-radius: 10px; opacity: 1; cursor: pointer; transition: all 0.3s ease 0s;}
+.single-popular-course-card button:hover{background-color: hsl(39, 100%, 59%);}
+.load-more{background-color: orange; padding: 15px 30px; margin: 0px auto; margin-top: 10px; color: black; font-size: 20px; border: none; border-radius: 10px; opacity: 1; cursor: pointer; transition: all 0.3s ease 0s; display: flex; justify-content: center; align-items: center;}
+.load-more:hover{background-color: hsl(39, 100%, 59%);}
+/* Popular Course Card Design */
+
+/*Responsive Section*/
+
+[class*="col-"] {float: left;}
+
+/* Responsive Container */
+.container {width: 90%; margin: 0px auto;}
+.container-fluid {width: 100%;}
+/*Responsive Container*/
+
+/*Responsive Box*/
+.quarter-box {width: 25%;}
+.half-box {width: 50%;}
+.three-quarter-box {width: 75%;}
+.full-box {width: 100%;}
+.full-view{min-height: 100vh;}
+/*Responsive Box*/
+
+/*Responsive Column*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*Responsive Column*/
+
+/*Responsive Row*/
+.row{width: 100%;}
+/*Responsive Row*/
+
+
+@media only screen and (max-width: 1600px) {
+}
+@media only screen and (max-width: 992px) {body{background-color: green;}}
+@media only screen and (max-width: 768px) {body{background-color: blue;}}
+
+/*Responsive Section*/
